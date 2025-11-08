@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <%- include('layouts/header')  %>
+    <h1>Welcome ! <%= user.name %></h1>
+    <h1>Email ! <%= user.email %></h1>
+    <b>
+        Skill !
+        <ul> 
+            <% user.skills.forEach((item)=>{ %>
+                    <li> <%= item %>  </li>
+            <% }) %>
+        </ul>
+    </b>
+    <%- include('layouts/footer')  %>
+</body>
+</html>
